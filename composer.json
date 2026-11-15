@@ -1,0 +1,30 @@
+{
+    "name": "benfirad/daak-redmono-mail-ui",
+    "description": "DAAK-Redmono Mail UI — Modern floating-workspace skin for Roundcube Webmail (extends Elastic)",
+    "type": "roundcube-skin",
+    "license": "GPL-3.0-or-later",
+    "keywords": [
+        "roundcube",
+        "skin",
+        "theme",
+        "webmail",
+        "elastic",
+        "daak",
+        "redmono"
+    ],
+    "homepage": "https://github.com/benfirad/daak-redmono-mail-ui",
+    "authors": [
+        {
+            "name": "Firat Dasdogen",
+            "homepage": "https://github.com/benfirad"
+        }
+    ],
+    "require": {
+        "roundcube/plugin-installer": ">=0.3.0"
+    },
+    "extra": {
+        "roundcube": {
+            "min-version": "1.6.0"
+        }
+    }
+}
