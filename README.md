@@ -72,7 +72,21 @@ skins/daak-redmono/
 
 ## Installation
 
-### Option 1: Docker / Docker Compose (Recommended)
+### Option 1: Composer / Roundcube Skin Installer (`roundcube-skin`)
+
+In your Roundcube root directory (`composer.json`), require the package via Composer (`roundcube/plugin-installer` automatically installs it into `skins/daak_redmono_mail_ui` and offers to activate it):
+
+```bash
+composer require benfirad/daak-redmono-mail-ui
+```
+
+Or enable it manually in `config/config.inc.php`:
+
+```php
+$config['skin'] = 'daak_redmono_mail_ui';
+```
+
+### Option 2: Docker / Docker Compose (Recommended for Containers)
 
 Mount `skins/daak-redmono` directly into your Roundcube container's skins directory:
 
@@ -90,11 +104,12 @@ Then enable the skin in `config/config.inc.php`:
 $config['skin'] = 'daak-redmono';
 ```
 
-### Option 2: Manual Installation
+### Option 3: Direct Git Clone / Manual Installation
+
+Clone directly into your Roundcube `skins/daak-redmono` folder (both the repository root and `skins/daak-redmono/` carry the full skin layout):
 
 ```bash
-git clone https://github.com/benfirad/daak-redmono-mail-ui.git
-cp -R daak-redmono-mail-ui/skins/daak-redmono /path/to/roundcube/skins/daak-redmono
+git clone https://github.com/benfirad/daak-redmono-mail-ui.git /path/to/roundcube/skins/daak-redmono
 ```
 
 Set `$config['skin'] = 'daak-redmono';` in `/path/to/roundcube/config/config.inc.php`.

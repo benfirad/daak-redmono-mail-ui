@@ -16,9 +16,15 @@
     "authors": [
         {
             "name": "Firat Dasdogen",
-            "homepage": "https://github.com/benfirad"
+            "email": "hello@redmono.com",
+            "homepage": "https://github.com/benfirad",
+            "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/benfirad/daak-redmono-mail-ui/issues",
+        "source": "https://github.com/benfirad/daak-redmono-mail-ui"
+    },
     "require": {
         "roundcube/plugin-installer": ">=0.3.0"
     },
